@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support app for understanding cycles of abuse and grief stages with New Zealand resources">
+    <title>Hope & Healing - Support & Resources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Hope & Healing</h1>
+                    <p class="tagline">Your Journey to Recovery</p>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#abuse-cycles" class="nav-link">Abuse Cycles</a></li>
+                    <li><a href="#grief-stages" class="nav-link">Grief Stages</a></li>
+                    <li><a href="#resources" class="nav-link">NZ Resources</a></li>
+                    <li><a href="#help" class="nav-link emergency">Get Help Now</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>You Are Not Alone</h2>
+                    <p>Understanding your journey through abuse and grief is the first step toward healing. Find support, information, and resources here.</p>
+                    <div class="hero-buttons">
+                        <a href="#help" class="btn btn-primary">Get Immediate Help</a>
+                        <a href="#resources" class="btn btn-secondary">Find Resources</a>
+                    </div>
+                </div>
+                <div class="emergency-banner">
+                    <p><strong>Emergency:</strong> If you're in immediate danger, call <a href="tel:111">111</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for information, resources, or support..." aria-label="Search">
+                    <button id="searchBtn" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </section>
+
+        <!-- Abuse Cycles Section -->
+        <section id="abuse-cycles" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Understanding the Cycle of Abuse</h2>
+                <p class="section-intro">Recognizing patterns of abuse is crucial for breaking free. The cycle of abuse typically follows predictable stages.</p>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon tension">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <h3>1. Tension Building</h3>
+                        <p>Stress and tension accumulate. Minor incidents occur, communication breaks down, and the victim may feel like they're "walking on eggshells."</p>
+                        <ul class="card-list">
+                            <li>Increased anxiety and fear</li>
+                            <li>Attempts to placate the abuser</li>
+                            <li>Feeling powerless and trapped</li>
+                            <li>Hyper-vigilance to mood changes</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon incident">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3>2. Acute Incident</h3>
+                        <p>The explosion of violence - physical, emotional, verbal, or sexual abuse occurs. This is the shortest but most destructive phase.</p>
+                        <ul class="card-list">
+                            <li>Physical or emotional outbursts</li>
+                            <li>Intense fear and trauma</li>
+                            <li>Unpredictable behavior</li>
+                            <li>Victim feels completely powerless</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon reconciliation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3>3. Reconciliation (Honeymoon)</h3>
+                        <p>The abuser apologizes, shows remorse, makes promises to change, and may shower the victim with affection and gifts.</p>
+                        <ul class="card-list">
+                            <li>Apologies and promises</li>
+                            <li>Expressions of love</li>
+                            <li>Blaming external factors</li>
+                            <li>Victim feels hope for change</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon calm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3>4. Calm Period</h3>
+                        <p>A period of relative peace where the abuse may seem to have stopped. The abuser may act as if the abuse never happened.</p>
+                        <ul class="card-list">
+                            <li>Temporary peace</li>
+                            <li>Normal relationship activities</li>
+                            <li>Victim's hope strengthens</li>
+                            <li>Cycle preparation to repeat</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>Breaking the Cycle</h4>
+                    <p>Understanding these patterns is the first step. The cycle tends to repeat and often escalates over time. If you recognize these patterns, reach out for help. You deserve safety and respect.</p>
+                    <a href="#resources" class="btn btn-primary">Find Support Resources</a>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Types of Abuse</span>
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-grid">
+                                <div>
+                                    <h5>Physical Abuse</h5>
+                                    <p>Hitting, kicking, pushing, restraining, or any unwanted physical contact that causes harm or fear.</p>
+                                </div>
+                                <div>
+                                    <h5>Emotional/Psychological Abuse</h5>
+                                    <p>Manipulation, gaslighting, intimidation, humiliation, isolation from friends and family, or controlling behavior.</p>
+                                </div>
+                                <div>
+                                    <h5>Verbal Abuse</h5>
+                                    <p>Name-calling, yelling, threatening, blaming, or using words to control, hurt, or demean.</p>
+                                </div>
+                                <div>
+                                    <h5>Financial Abuse</h5>
+                                    <p>Controlling finances, preventing employment, or creating financial dependency.</p>
+                                </div>
+                                <div>
+                                    <h5>Sexual Abuse</h5>
+                                    <p>Any non-consensual sexual activity, coercion, or using sex as a form of control.</p>
+                                </div>
+                                <div>
+                                    <h5>Digital Abuse</h5>
+                                    <p>Monitoring devices, demanding passwords, harassment through technology, or posting harmful content online.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Warning Signs You May Be in an Abusive Relationship</span>
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="checklist">
+                                <li>Your partner tells you that you can never do anything right</li>
+                                <li>You feel afraid of your partner much of the time</li>
+                                <li>You avoid certain topics or situations to prevent your partner's anger</li>
+                                <li>Your partner isolates you from family, friends, or activities</li>
+                                <li>Your partner controls where you go, what you wear, or who you see</li>
+                                <li>You feel like you need permission to make decisions or go out</li>
+                                <li>Your partner threatens to hurt you, themselves, or your children</li>
+                                <li>Your partner damages property or destroys your belongings</li>
+                                <li>Your partner blames you for their abusive behavior</li>
+                                <li>You've been physically hurt or threatened by your partner</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grief Stages Section -->
+        <section id="grief-stages" class="content-section alt-bg">
+            <div class="container">
+                <h2 class="section-title">The Five Stages of Grief</h2>
+                <p class="section-intro">Grief is a natural response to loss. Understanding these stages can help you navigate your healing journey. Remember, grief is not linear - you may experience these stages in any order.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker denial">1</div>
+                        <div class="timeline-content">
+                            <h3>Denial</h3>
+                            <p class="stage-subtitle">"This can't be happening"</p>
+                            <p>Denial helps us survive the initial shock and pain. It's a defense mechanism that allows us to process the loss at our own pace.</p>
+                            <div class="stage-details">
+                                <h4>What you might experience:</h4>
+                                <ul>
+                                    <li>Shock and disbelief</li>
+                                    <li>Numbness or feeling disconnected</li>
+                                    <li>Avoiding the reality of the loss</li>
+                                    <li>Difficulty accepting what happened</li>
+                                </ul>
+                                <h4>Coping strategies:</h4>
+                                <ul>
+                                    <li>Allow yourself time to process</li>
+                                    <li>Talk to someone you trust</li>
+                                    <li>Don't rush the process</li>
+                                    <li>Practice self-compassion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker anger">2</div>
+                        <div class="timeline-content">
+                            <h3>Anger</h3>
+                            <p class="stage-subtitle">"Why is this happening? It's not fair!"</p>
+                            <p>As reality sets in, anger emerges. You may direct it at others, yourself, or even the person you lost. This is a natural and necessary part of healing.</p>
+                            <div class="stage-details">
+                                <h4>What you might experience:</h4>
+                                <ul>
+                                    <li>Frustration and irritability</li>
+                                    <li>Blaming others or yourself</li>
+                                    <li>Feeling abandoned or betrayed</li>
+                                    <li>Questioning "why me?"</li>
+                                </ul>
+                                <h4>Coping strategies:</h4>
+                                <ul>
+                                    <li>Express your feelings safely</li>
+                                    <li>Exercise or physical activity</li>
+                                    <li>Journal your thoughts</li>
+                                    <li>Seek professional support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker bargaining">3</div>
+                        <div class="timeline-content">
+                            <h3>Bargaining</h3>
+                            <p class="stage-subtitle">"If only... I would do anything to change this"</p>
+                            <p>In this stage, we try to negotiate or make deals to reverse or lessen the loss. We focus on "what if" and "if only" statements.</p>
+                            <div class="stage-details">
+                                <h4>What you might experience:</h4>
+                                <ul>
+                                    <li>"If only" thoughts</li>
+                                    <li>Trying to negotiate with a higher power</li>
+                                    <li>Dwelling on what could have been done differently</li>
+                                    <li>Feeling guilty about things you did or didn't do</li>
+                                </ul>
+                                <h4>Coping strategies:</h4>
+                                <ul>
+                                    <li>Acknowledge your thoughts without judgment</li>
+                                    <li>Practice mindfulness</li>
+                                    <li>Focus on the present moment</li>
+                                    <li>Challenge guilt with reality</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker depression">4</div>
+                        <div class="timeline-content">
+                            <h3>Depression</h3>
+                            <p class="stage-subtitle">"I'm too sad to do anything"</p>
+                            <p>As the full weight of the loss becomes real, sadness and despair may set in. This is a natural response, not a sign of weakness or mental illness.</p>
+                            <div class="stage-details">
+                                <h4>What you might experience:</h4>
+                                <ul>
+                                    <li>Deep sadness and crying</li>
+                                    <li>Withdrawal from others</li>
+                                    <li>Loss of interest in activities</li>
+                                    <li>Changes in sleep or appetite</li>
+                                    <li>Feeling overwhelmed</li>
+                                </ul>
+                                <h4>Coping strategies:</h4>
+                                <ul>
+                                    <li>Maintain connections with loved ones</li>
+                                    <li>Establish a daily routine</li>
+                                    <li>Engage in gentle self-care</li>
+                                    <li>Consider counseling or therapy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker acceptance">5</div>
+                        <div class="timeline-content">
+                            <h3>Acceptance</h3>
+                            <p class="stage-subtitle">"I'm learning to live with this"</p>
+                            <p>Acceptance doesn't mean you're "over it" or happy about the loss. It means you've come to terms with the new reality and are learning to move forward.</p>
+                            <div class="stage-details">
+                                <h4>What you might experience:</h4>
+                                <ul>
+                                    <li>Finding a new sense of normal</li>
+                                    <li>More good days than bad</li>
+                                    <li>Ability to recall memories without intense pain</li>
+                                    <li>Re-engagement with life</li>
+                                    <li>Finding meaning in the experience</li>
+                                </ul>
+                                <h4>Moving forward:</h4>
+                                <ul>
+                                    <li>Honor your journey and progress</li>
+                                    <li>Continue self-care practices</li>
+                                    <li>Help others going through similar experiences</li>
+                                    <li>Create new routines and connections</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box info">
+                    <h4>Important Reminders About Grief</h4>
+                    <ul>
+                        <li><strong>Grief is not linear:</strong> You may move back and forth between stages, and that's completely normal.</li>
+                        <li><strong>Everyone grieves differently:</strong> There's no "right" way to grieve or timeline you must follow.</li>
+                        <li><strong>Grief can resurface:</strong> Anniversaries, holidays, or unexpected triggers may bring back intense feelings.</li>
+                        <li><strong>Seeking help is strength:</strong> Professional support can provide valuable tools and perspective.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- NZ Resources Section -->
+        <section id="resources" class="content-section">
+            <div class="container">
+                <h2 class="section-title">New Zealand Support Resources</h2>
+                <p class="section-intro">Help is available 24/7. You don't have to face this alone. These organizations are here to support you.</p>
+
+                <div class="resources-grid">
+                    <div class="resource-card emergency-card">
+                        <div class="resource-header">
+                            <h3>Emergency Services</h3>
+                            <span class="badge emergency">Emergency</span>
+                        </div>
+                        <p><strong>If you're in immediate danger, call:</strong></p>
+                        <a href="tel:111" class="phone-number">111</a>
+                        <p class="resource-note">Police, ambulance, and fire services</p>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Family Violence Information Line</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Free, confidential support for anyone affected by family violence</p>
+                        <a href="tel:0800456450" class="phone-number">0800 456 450</a>
+                        <p class="resource-note">Available in multiple languages</p>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Women's Refuge</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Support for women and children experiencing domestic violence</p>
+                        <a href="tel:0800733843" class="phone-number">0800 REFUGE (0800 733 843)</a>
+                        <div class="resource-links">
+                            <a href="https://womensrefuge.org.nz" target="_blank" rel="noopener">womensrefuge.org.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Shine - Safer Homes in New Zealand</h3>
+                            <span class="badge weekday">Mon-Fri 9am-9pm</span>
+                        </div>
+                        <p>Domestic abuse helpline providing support and information</p>
+                        <a href="tel:0508744633" class="phone-number">0508 SHINES (0508 744 633)</a>
+                        <div class="resource-links">
+                            <a href="https://www.2shine.org.nz" target="_blank" rel="noopener">2shine.org.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Victim Support</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Free support for victims of crime and trauma</p>
+                        <a href="tel:0800842846" class="phone-number">0800 VICTIM (0800 842 846)</a>
+                        <div class="resource-links">
+                            <a href="https://www.victimsupport.org.nz" target="_blank" rel="noopener">victimsupport.org.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Are You OK?</h3>
+                        </div>
+                        <p>Campaign to prevent family violence with resources and information</p>
+                        <div class="resource-links">
+                            <a href="https://areyouok.org.nz" target="_blank" rel="noopener">areyouok.org.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Elder Abuse Response Service</h3>
+                        </div>
+                        <p>Support for older people experiencing abuse</p>
+                        <a href="tel:0800327222" class="phone-number">0800 EA NOT OK (0800 32 668 65)</a>
+                        <div class="resource-links">
+                            <a href="https://www.elderabuse.org.nz" target="_blank" rel="noopener">elderabuse.org.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>OUTLine NZ</h3>
+                        </div>
+                        <p>Support for LGBTQIA+ communities</p>
+                        <a href="tel:08006885463" class="phone-number">0800 OUTLINE (0800 688 5463)</a>
+                        <p class="resource-note">Wed-Sun 6pm-9pm</p>
+                        <div class="resource-links">
+                            <a href="https://www.outline.org.nz" target="_blank" rel="noopener">outline.org.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Lifeline</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Free confidential support for anyone in distress</p>
+                        <a href="tel:0800543354" class="phone-number">0800 LIFELINE (0800 543 354)</a>
+                        <p class="resource-note">Or text HELP (4357) for free 24/7</p>
+                        <div class="resource-links">
+                            <a href="https://www.lifeline.org.nz" target="_blank" rel="noopener">lifeline.org.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Samaritans</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Confidential support for people feeling lonely, anxious or suicidal</p>
+                        <a href="tel:0800726666" class="phone-number">0800 726 666</a>
+                        <div class="resource-links">
+                            <a href="https://www.samaritans.org.nz" target="_blank" rel="noopener">samaritans.org.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Youthline</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Free counseling for young people</p>
+                        <a href="tel:0800376633" class="phone-number">0800 376 633</a>
+                        <p class="resource-note">Text 234 or email talk@youthline.co.nz</p>
+                        <div class="resource-links">
+                            <a href="https://www.youthline.co.nz" target="_blank" rel="noopener">youthline.co.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Depression Helpline</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Support for anyone experiencing depression or anxiety</p>
+                        <a href="tel:0800111757" class="phone-number">0800 111 757</a>
+                        <p class="resource-note">Text 4202 for support</p>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Suicide Crisis Helpline</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Free confidential support if you're thinking about suicide</p>
+                        <a href="tel:0508828865" class="phone-number">0508 TAUTOKO (0508 828 865)</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>1737 - Need to Talk?</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Free call or text for support from a trained counselor</p>
+                        <a href="tel:1737" class="phone-number">1737</a>
+                        <div class="resource-links">
+                            <a href="https://1737.org.nz" target="_blank" rel="noopener">1737.org.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Safe to Talk - Sexual Harm Helpline</h3>
+                            <span class="badge available-24-7">24/7</span>
+                        </div>
+                        <p>Support for anyone affected by sexual harm</p>
+                        <a href="tel:0800044334" class="phone-number">0800 044 334</a>
+                        <p class="resource-note">Text 4334 or live chat available</p>
+                        <div class="resource-links">
+                            <a href="https://safetotalk.nz" target="_blank" rel="noopener">safetotalk.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3>Male Survivors of Sexual Abuse Trust</h3>
+                        </div>
+                        <p>Support for male survivors of sexual abuse</p>
+                        <a href="tel:0800044334" class="phone-number">0800 044 334</a>
+                        <div class="resource-links">
+                            <a href="https://www.malesurvivor.nz" target="_blank" rel="noopener">malesurvivor.nz</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box success">
+                    <h4>Safety Planning</h4>
+                    <p>If you're in an abusive relationship, it's important to have a safety plan. This might include:</p>
+                    <ul>
+                        <li>Keeping important documents in a safe place outside your home</li>
+                        <li>Having a code word to alert trusted friends or family</li>
+                        <li>Knowing safe places you can go in an emergency</li>
+                        <li>Having emergency numbers saved in your phone under different names</li>
+                        <li>Packing an emergency bag with essentials</li>
+                    </ul>
+                    <p>Contact any of the services above to help create a personalized safety plan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Section -->
+        <section id="help" class="content-section alt-bg">
+            <div class="container">
+                <h2 class="section-title">Get Help Now</h2>
+                
+                <div class="help-grid">
+                    <div class="help-card">
+                        <h3>In Immediate Danger?</h3>
+                        <p>If you or someone you know is in immediate danger:</p>
+                        <a href="tel:111" class="btn btn-emergency">Call 111 Now</a>
+                        <p class="help-note">Police will respond to domestic violence incidents</p>
+                    </div>
+
+                    <div class="help-card">
+                        <h3>Need to Talk to Someone?</h3>
+                        <p>24/7 confidential support available:</p>
+                        <div class="quick-contacts">
+                            <a href="tel:0800456450" class="quick-contact-btn">Family Violence Line<br>0800 456 450</a>
+                            <a href="tel:1737" class="quick-contact-btn">1737<br>Text or Call</a>
+                            <a href="tel:0800733843" class="quick-contact-btn">Women's Refuge<br>0800 733 843</a>
+                        </div>
+                    </div>
+
+                    <div class="help-card">
+                        <h3>Online Resources</h3>
+                        <p>Access information and support online:</p>
+                        <ul class="help-links">
+                            <li><a href="https://areyouok.org.nz" target="_blank" rel="noopener">Are You OK? - Information & Resources</a></li>
+                            <li><a href="https://safetotalk.nz" target="_blank" rel="noopener">Safe to Talk - Sexual Harm Support</a></li>
+                            <li><a href="https://www.victimsupport.org.nz" target="_blank" rel="noopener">Victim Support Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>Browser Safety</h4>
+                    <p>If someone may be monitoring your internet use, consider:</p>
+                    <ul>
+                        <li>Using a device they don't have access to (friend's phone, library computer)</li>
+                        <li>Using private/incognito browsing mode</li>
+                        <li>Clearing your browser history after visiting this site</li>
+                        <li>Having a quick exit strategy ready (keep another tab open)</li>
+                    </ul>
+                    <button id="quickExitBtn" class="btn btn-secondary">Quick Exit (ESC)</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Hope & Healing</h4>
+                    <p>A comprehensive resource for understanding abuse cycles, grief stages, and accessing New Zealand support services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#abuse-cycles">Abuse Cycles</a></li>
+                        <li><a href="#grief-stages">Grief Stages</a></li>
+                        <li><a href="#resources">NZ Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency Contacts</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:111">Police/Ambulance: 111</a></li>
+                        <li><a href="tel:0800456450">Family Violence: 0800 456 450</a></li>
+                        <li><a href="tel:1737">Crisis Support: 1737</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Remember</h4>
+                    <p><strong>You are not alone. Help is available. You deserve safety, respect, and support.</strong></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hope & Healing. This information is for educational purposes. Always seek professional help for your specific situation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
